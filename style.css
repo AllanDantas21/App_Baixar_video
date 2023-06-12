@@ -73,12 +73,41 @@ form .preview-area{
   border-radius: 5px;
   border: 2px dashed #7D2AE8;
 }
+.preview-area.active{
+  border: none;
+}
+.preview-area .thumbnail{
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+}
+.preview-area.active .thumbnail{
+  display: block;
+}
 .preview-area .icon{
   color: #7D2AE8;
   font-size: 80px;
 }
+
 .preview-area span{
   color: #7D2AE8;
-  margin-top: 20px;
+  margin-top: 25px;
+}
+.preview-area.active .icon,
+.preview-area.active span{
+ display: none;
+}
+form .download-btn{
+  height: 53px;
+  width: 100%;
+  margin: 30px 0px 20px 0px;
+  border: none;
+  border-radius: 5px;
+  background: #7D2AE8;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+
 }
 
